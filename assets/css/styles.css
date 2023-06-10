@@ -739,7 +739,8 @@ the website, in dark theme
 }
 
 .footer__logo-icon {
-  font-size: 1.15rem;
+  height: 1.15rem;
+  width: auto;
   color: var(--first-color);
 }
 
