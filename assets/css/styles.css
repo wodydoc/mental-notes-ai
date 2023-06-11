@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
+  --header-height: 4.25rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -406,7 +406,7 @@ the website, in dark theme
 /*=============== STEPS ===============*/
 .steps__bg {
   background-color: var(--first-color);
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 0.5rem 2rem;
   border-radius: 1rem;
 }
 
@@ -841,7 +841,7 @@ div.site-signature.text-end#siteSignature a.fw-bold {
   }
 
   .steps__bg {
-    padding: 2rem 1rem;
+    padding: 2rem 0.25rem;
   }
   .steps__card {
     padding: 1.5rem;
