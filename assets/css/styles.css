@@ -8,8 +8,8 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: hsl(231, 48%, 48%);
-  --first-color-alt: hsl(110, 60%, 78%);
+  --first-color: hsl(201.16deg 98.1% 41.37%);
+  --first-color-alt: hsl(204.44deg 63.38% 41.76%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --title-color: hsl(var(--hue), 4%, 15%);
@@ -313,7 +313,9 @@ the website, in dark theme
 }
 
 .home__img {
-  width: 200px;
+  width: 100%;
+  height: 352px;
+  margin: 0;
   justify-self: center;
 }
 
@@ -325,49 +327,6 @@ the website, in dark theme
 
 .home__description {
   margin-bottom: var(--mb-2-5);
-}
-
-.home__social {
-  position: absolute;
-  top: 2rem;
-  right: -1rem;
-  display: grid;
-  justify-items: center;
-  row-gap: 3.5rem;
-}
-
-.home__social-follow {
-  font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
-  color: var(--first-color);
-  position: relative;
-  transform: rotate(90deg);
-}
-
-.home__social-follow::after {
-  content: "";
-  position: absolute;
-  width: 1rem;
-  height: 2px;
-  background-color: var(--first-color);
-  right: -45%;
-  top: 50%;
-}
-
-.home__social-links {
-  display: inline-flex;
-  flex-direction: column;
-  row-gap: 0.25rem;
-}
-
-.home__social-link {
-  font-size: 1rem;
-  color: var(--first-color);
-  transition: 0.3s;
-}
-
-.home__social-link:hover {
-  transform: translateX(0.25rem);
 }
 
 /*=============== BUTTONS ===============*/
@@ -453,7 +412,11 @@ the website, in dark theme
 
 .steps__container {
   height: 100vh;
-  padding: 1rem 0;
+  width: auto;
+  padding: 0;
+  margin-bottom: -1rem;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .steps__title {
@@ -488,6 +451,16 @@ the website, in dark theme
 
 .steps__card:hover .steps__card-number {
   transform: translateY(-0.25rem);
+}
+
+div#customgpt_chat div#siteSignature.site-signature.text-end a.fw-bold {
+  display: none !important;
+}
+
+/*=============== CHATBOT ===============*/
+
+div.site-signature.text-end#siteSignature a.fw-bold {
+  display: none;
 }
 
 /*=============== PRODUCTS ===============*/
@@ -736,10 +709,11 @@ the website, in dark theme
   letter-spacing: -1px;
   margin-bottom: var(--mb-2-5);
   transition: 0.3s;
+  font-size: var(--h1-font-size);
 }
 
 .footer__logo-icon {
-  height: 1.15rem;
+  height: var(--h1-font-size);
   width: auto;
   color: var(--first-color);
 }
@@ -749,7 +723,7 @@ the website, in dark theme
 }
 
 .footer__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: var(--mb-1-5);
 }
 
@@ -780,7 +754,7 @@ the website, in dark theme
 }
 
 .footer__information {
-  font-size: var(--small-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .footer__social {
@@ -789,7 +763,7 @@ the website, in dark theme
 }
 
 .footer__social-link {
-  font-size: 1rem;
+  font-size: var(--header-height);
   color: var(--text-color);
   transition: 0.3s;
 }
@@ -862,9 +836,6 @@ the website, in dark theme
     margin-right: var(--mb-1);
   }
 
-  .home__img {
-    width: 180px;
-  }
   .home__title {
     font-size: var(--h1-font-size);
   }
@@ -934,7 +905,7 @@ the website, in dark theme
     align-items: center;
   }
   .home__img {
-    width: 280px;
+    /* width: 280px; */
     order: 1;
   }
   .home__social {
@@ -972,7 +943,7 @@ the website, in dark theme
     padding: 13rem 0 5rem;
   }
   .home__img {
-    width: 350px;
+    margin: 0;
   }
   .home__description {
     padding-right: 7rem;
