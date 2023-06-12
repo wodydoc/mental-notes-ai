@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 4.25rem;
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -20,7 +20,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
+  --display-font: "neue-haas-grotesk-display", sans-serif;
+  --text-font: "neue-haas-grotesk-text", sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -30,8 +31,8 @@
   --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
+  --font-medium: 400;
+  --font-semi-bold: 700;
 
   /*========== Margenes Bottom ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -75,7 +76,7 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: var(--display-font);
   font-size: var(--normal-font-size);
 }
 
@@ -210,6 +211,7 @@ the website, in dark theme
 }
 
 .nav__logo {
+  font-family: var(--text-font);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
@@ -763,8 +765,8 @@ div.site-signature.text-end#siteSignature a.fw-bold {
 }
 
 .footer__social-link {
-  font-size: var(--header-height);
-  color: var(--text-color);
+  font-size: var(--big-font-size);
+  color: var(--first-color);
   transition: 0.3s;
 }
 
