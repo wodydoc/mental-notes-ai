@@ -418,13 +418,14 @@ the website, in dark theme
 }
 
 .steps__container {
-  height: 95vh;
-  width: auto;
+  height: 90vh;
+  width: 100%;
   padding: 0;
-  margin: var(--mb-2) 0;
-  overflow: hidden;
-  /* border-radius: 1rem; */
+  margin: 0;
+  overflow: hidden; 
 }
+
+ 
 
 .steps__title {
   color: var(--text-color);
@@ -958,10 +959,6 @@ div.site-signature.text-end#siteSignature a.fw-bold {
 
   .section {
     padding: 4rem 0 1rem;
-  }
-  .section__title,
-  .section__title-center {
-    font-size: var(--h1-font-size);
   }
 
   .home {
