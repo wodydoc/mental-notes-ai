@@ -137,7 +137,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.steps__bg`, {delay: 500})
 sr.reveal(`div#customgpt_chat`, {delay: 600})
-sr.reveal(`.home__title, .steps__title`,{origin: 'bottom'})
+sr.reveal(`.home__title, .steps__title, div#customgpt_chat`,{origin: 'bottom'})
 sr.reveal(`.contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})

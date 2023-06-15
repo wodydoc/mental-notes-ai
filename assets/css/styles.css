@@ -3,17 +3,17 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3.75rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: hsl(201.16deg 98.1% 41.37%);
+  --first-color: hsl(200, 97%, 45%);
   --first-color-alt: hsl(204.44deg 63.38% 41.76%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
-  --title-color: hsl(0deg 0% 0%);
-  --text-color: hsl(0deg 0% 25.88%);
+  --title-color: hsl(0deg 0% 12.94%);
+  --text-color: hsl(204.26deg 72.68% 23.12%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(0deg 0% 98.04%);
   --container-color: hsl(0deg 0% 100%);
@@ -213,13 +213,14 @@ the website, in dark theme
 }
 
 .nav__logo {
-  font-family: var(--text-font);
-  text-transform: uppercase;
-  font-weight: var(--font-semi-bold);
-  letter-spacing: -1px;
+  font-family: var(--display-font);
+  /* text-transform: uppercase; */
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  /* letter-spacing: -1px; */
   display: inline-flex;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 0.25rem;
   transition: 0.3s;
 }
 
@@ -433,6 +434,9 @@ the website, in dark theme
 .steps__title span {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+  font-style: normal;
+  font-family: var(--text-font);
+  font-size: var(--h2-font-size);
 }
 
 .steps__card {
