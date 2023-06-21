@@ -225,10 +225,10 @@ the website, in dark theme
 }
 
 .nav__logo-icon {
-  /* font-size: 2rem; */
-  height: var(--header-height);
-  width: auto;
-  /* filter: drop-shadow(1px 1px 1px var(--title-color)); */
+  height: calc(var(--header-height) * 2.75);
+  width: 100%;
+  margin-right: -4rem;
+  margin-left: -4rem; 
   color: var(--first-color);
 }
 
