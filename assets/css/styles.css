@@ -228,7 +228,7 @@ the website, in dark theme
   height: calc(var(--header-height) * 2.75);
   width: 100%;
   margin-right: -4rem;
-  margin-left: -4rem; 
+  margin-left: -4rem;
   color: var(--first-color);
 }
 
@@ -328,7 +328,7 @@ the website, in dark theme
 .home__title {
   font-size: var(--big-font-size);
   line-height: 1;
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: -5rem;
 }
 
 .home__description {
@@ -411,7 +411,7 @@ the website, in dark theme
 
 /*=============== STEPS ===============*/
 .steps__bg {
-  background-color: var(--first-color);
+  background-color: var(--container-color);
   padding: 3rem 0 1rem;
   border-radius: 1rem;
   margin-top: 5rem;
@@ -422,14 +422,14 @@ the website, in dark theme
   width: 100%;
   padding: 0;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
- 
 
 .steps__title {
   color: var(--text-color);
   font-weight: var(--font-medium);
+  font-style: oblique;
+  margin-top: -5rem;
 }
 
 .steps__title span {
@@ -881,6 +881,14 @@ div.site-signature.text-end#siteSignature a.fw-bold {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .home__title {
+    margin-bottom: -8rem;
+  }
+
+  .steps__title {
+    margin-top: -8rem;
+  }
+
   .product__description {
     padding: 0 4rem;
   }
@@ -966,6 +974,14 @@ div.site-signature.text-end#siteSignature a.fw-bold {
   }
   .home__img {
     margin: 0;
+  }
+
+  .home__title {
+    margin-bottom: -12rem;
+  }
+
+  .steps__title {
+    margin-top: -12rem;
   }
   .home__description {
     padding-right: 7rem;
