@@ -221,8 +221,8 @@ the website, in dark theme
 
 .nav__logo {
   font-family: var(--display-font);
+  font-weight: var(--font-semi-bold);
   font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
   display: inline-flex;
   align-items: center;
   column-gap: 2.5px;
@@ -334,14 +334,14 @@ the website, in dark theme
 }
 
 .home__title {
-  font-size: var(--big-font-size);
+  font-size: var(--h1-font-size);
   line-height: 1;
-  /* margin-bottom: -5rem; */
+  letter-spacing: 1px;
 }
 
 .introducing__svg {
   margin: 0 20vw;
-  width: -webkit-fill-available; 
+  width: -webkit-fill-available;
 }
 
 .home__description {
@@ -439,7 +439,8 @@ the website, in dark theme
 }
 
 .steps__title {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   letter-spacing: 1px;
   /* margin-top: -5rem; */
@@ -450,7 +451,7 @@ the website, in dark theme
   color: var(--title-color);
   font-style: normal;
   font-family: var(--text-font);
-  font-size: var(--h2-font-size);
+  /* font-size: var(--h2-font-size); */
 }
 
 .steps__card {
@@ -768,12 +769,12 @@ a.mailtolink:hover .contact__icon {
   width: auto;
   align-items: center;
   align-content: center;
-  justify-items: stretch;
+  justify-items: center;
 }
 
-.footer__content svg {
-  width: 78vw;
-  max-width: 800px;
+.footer__content svg { 
+  height: calc(var(--header-height) *2);
+  overflow: hidden; 
 }
 
 .footer__logo {
@@ -898,7 +899,7 @@ a.mailtolink:hover .contact__icon {
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background: var(--container-color);
+  background: var(--body-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -916,6 +917,10 @@ a.mailtolink:hover .contact__icon {
 
   .home__title {
     font-size: var(--h1-font-size);
+  }
+
+  .steps__title {
+    font-size: var(--h2-font-size);
   }
 
   .steps__bg {
@@ -1039,7 +1044,6 @@ a.mailtolink:hover .contact__icon {
     padding: 3.5rem 2.5rem;
   }
 
-  
   .steps__card-title {
     font-size: var(--normal-font-size);
   }
