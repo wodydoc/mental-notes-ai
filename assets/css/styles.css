@@ -109,7 +109,9 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
 }
 
 img {
@@ -653,7 +655,7 @@ div.site-signature.text-end#siteSignature a.fw-bold {
 }
 
 .contact__icon {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
 }
 
 .contact__inputs {
@@ -724,17 +726,16 @@ div.site-signature.text-end#siteSignature a.fw-bold {
 
 .footer__content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   height: auto;
   width: auto;
-  align-items: stretch;
-  /* flex-direction: column; */
-  /* align-content: center; */
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .footer__content svg {
-  width: 90vw;
+  width: 75vw;
   max-width: 800px;
 }
 
