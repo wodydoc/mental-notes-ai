@@ -233,6 +233,11 @@ the website, in dark theme
   flex-wrap: wrap;
 }
 
+span.beta__version {
+  font-weight: var(--font-medium);
+  padding-left: 5px;
+}
+
 .nav__logo-icon {
   height: var(--header-height);
   margin-right: var(--mb-0-5);
@@ -334,9 +339,12 @@ the website, in dark theme
 }
 
 .home__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--display-font);
   line-height: 1;
   letter-spacing: 1px;
+  margin-bottom: -1rem;
 }
 
 .introducing__svg {
@@ -439,11 +447,13 @@ the website, in dark theme
 }
 
 .steps__title {
-  /* color: var(--text-color); */
-  font-size: var(--h2-font-size);
+  color: var(--text-color);
+  font-family: var(--display-font);
+  font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
-  letter-spacing: 1px;
-  /* margin-top: -5rem; */
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  line-height: 120%;
 }
 
 .steps__title span {
@@ -772,9 +782,9 @@ a.mailtolink:hover .contact__icon {
   justify-items: center;
 }
 
-.footer__content svg { 
-  height: calc(var(--header-height) *2);
-  overflow: hidden; 
+.footer__content svg {
+  height: calc(var(--header-height) * 2);
+  overflow: hidden;
 }
 
 .footer__logo {
@@ -916,11 +926,11 @@ a.mailtolink:hover .contact__icon {
   }
 
   .home__title {
-    font-size: var(--h1-font-size);
+    font-size: calc(var(--big-font-size) + 1rem);
   }
 
   .steps__title {
-    font-size: var(--h2-font-size);
+    font-size: calc(var(--h1-font-size) + 1rem);
   }
 
   .steps__bg {
