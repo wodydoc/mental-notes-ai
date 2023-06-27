@@ -220,12 +220,12 @@ the website, in dark theme
 }
 
 .nav__logo {
-  font-family: var(--display-font);
+  font-family: var(--display-font);    font-family: var(--display-font);
   font-weight: var(--font-semi-bold);
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
-  column-gap: 2.5px;
+  column-gap: 0;
   transition: 0.3s;
   justify-content: flex-start;
   align-content: center;
@@ -449,7 +449,7 @@ span.beta__version {
 .steps__title {
   color: var(--text-color);
   font-family: var(--display-font);
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   letter-spacing: 1.5px;
   margin-bottom: 5px;
@@ -930,7 +930,7 @@ a.mailtolink:hover .contact__icon {
   }
 
   .steps__title {
-    font-size: calc(var(--h1-font-size) + 1rem);
+    font-size: var(--h2-font-size);
   }
 
   .steps__bg {
